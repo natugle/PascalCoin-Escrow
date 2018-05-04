@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <Name Value="janSQL_laz"/>
+    <Author Value="Jan Verhoeven"/>
+    <CompilerOptions>
+      <Version Value="8"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)/"/>
+      </SearchPaths>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Jan SQL"/>
+    <Files Count="5">
+      <Item1>
+        <Filename Value="janSQL.pas"/>
+        <UnitName Value="janSQL"/>
+      </Item1>
+      <Item2>
+        <Filename Value="janSQLExpression2.pas"/>
+        <UnitName Value="janSQLExpression2"/>
+      </Item2>
+      <Item3>
+        <Filename Value="janSQLStrings.pas"/>
+        <UnitName Value="janSQLStrings"/>
+      </Item3>
+      <Item4>
+        <Filename Value="janSQLTokenizer.pas"/>
+        <UnitName Value="janSQLTokenizer"/>
+      </Item4>
+      <Item5>
+        <Filename Value="mwStringHashList.pas"/>
+        <UnitName Value="mwStringHashList"/>
+      </Item5>
+    </Files>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)/"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
