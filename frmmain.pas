@@ -397,7 +397,7 @@ begin
 
   str := SendRequest('sendto', params);
 
-  DoSql('UPDATE escrow_db SET status=looked WHERE userid='''+ id + ''';COMMIT');
+  DoSql('UPDATE escrow_db SET status=locked WHERE userid='''+ id + ''';COMMIT');
 end;
 
 procedure TFormMain.Process_Escrow(oph, txt, pay: string);
